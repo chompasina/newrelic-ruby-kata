@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-ruby '2.2.2'
+ruby '2.4.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.1'
+gem 'rails', '> 4.2'
 # Use Postgres for the database
 gem 'pg', '>= 0.14.1'
 # Use SCSS for stylesheets
