@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -34,9 +33,8 @@ ActiveRecord::Schema.define(version: 20130221160705) do
     t.binary   "icon"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.index ["web_site_id"], name: "index_icons_on_web_site_id", using: :btree
   end
-
-  add_index "icons", ["web_site_id"], name: "index_icons_on_web_site_id", using: :btree
 
   create_table "web_sites", force: :cascade do |t|
     t.integer  "rank"
