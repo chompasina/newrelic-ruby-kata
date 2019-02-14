@@ -1,7 +1,7 @@
 {
   "name": "New Relic Ruby Kata",
   "description": "Using New Relic and Heroku, see how many things you can find and fix to make this app perform fast!",
-  "repository": "https://github.com/newrelic/newrelic-ruby-kata",
+  "repository": "https://github.com/chompasina/newrelic-ruby-kata",
   "website": "http://newrelic-ruby-kata.herokuapp.com/",
   "logo": "http://storefront.nr-assets.net/assets/newrelic/source/NewRelic-logo-square.png",
   "success_url": "/",
