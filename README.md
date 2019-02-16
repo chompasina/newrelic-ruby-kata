@@ -23,13 +23,18 @@ First,
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
+Due to Heroku's bundler version restrictions and the current version of Ruby, you may need to deploy the app using Heroku's CLI in order to set the Bundler to version 2 with
+```
+heroku buildpacks:set https://github.com/bundler/heroku-buildpack-bundler2
+```
+
 Then, you can load the sample data via:
 
     heroku addons:create heroku-postgresql:hobby-dev
     heroku addons:create memcachier
     heroku config:set NEW_RELIC_APP_NAME=<NAME>
-    heroku pg:credentials DATABASE_URL
-    pg_restore --verbose --clean --no-acl --no-owner -h <HOSTNAME> -U <USER> -d <DATABASE> -p <PORT> --password public/sample-data.dump
+    heroku pg:pg:credentials:url DATABASE_URL
+    pg_restore --verbose --clean --no-acl --no-owner -h <HOSTNAME> -U <USER> -d <DBNAME> -p <PORT> --password public/sample-data.dump
 
 Step 4
 -------
