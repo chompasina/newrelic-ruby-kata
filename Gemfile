@@ -34,6 +34,8 @@ gem 'dalli'
 gem 'memcachier'
 # add render_async to dynamically render response from external calls
 gem 'render_async'
+# employ Rails page caching (removed from core in Rails 4.0)
+gem 'actionpack-page_caching'
 # New Relic
 gem 'newrelic_rpm', '>=3.6.8'
 # Fast production server
