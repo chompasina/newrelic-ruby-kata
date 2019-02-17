@@ -32,6 +32,8 @@ gem 'httparty'
 # Dalli and Memcachier for Memcached connections
 gem 'dalli'
 gem 'memcachier'
+# add render_async to dynamically render response from external calls
+gem 'render_async'
 # New Relic
 gem 'newrelic_rpm', '>=3.6.8'
 # Fast production server
