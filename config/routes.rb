@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get "errors" => "errors#index"
   get "errors/ajax" => "errors#ajax"
   get :tweet, :controller => :tweets
+  get :email, :controller => :async
 
   root :to => "home#index"
 end
