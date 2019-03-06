@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130221160705) do
+ActiveRecord::Schema.define(version: 20190304012830) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20130221160705) do
     t.text     "snippet"
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
+    t.index ["url"], name: "index_web_sites_on_url", using: :btree
   end
 
 end
