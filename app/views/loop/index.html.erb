@@ -1,14 +1,11 @@
 <h1>The Loop</h1>
 <div class="jumbotron">
-  <p>Kata: 	N + 1 or some other unintended looping mishap can really hurt
-	your site by stealing away cycles and speed.
+  <p>Kata: Let's loop through sites and check if they offer favicons.
 </div>
 
 <div>
   Do sites provide /favicon.ico ?
   <ul>
-  <% @sites.each do |site| -%>
-    <li><%= site.url %> <% if site.icon.present? %><i class="glyphicon glyphicon-ok"></i><% end %></li>
-  <% end -%>
+  <%= render partial: "site", collection: @sites, cached: true %>
   </ul>
 </div>

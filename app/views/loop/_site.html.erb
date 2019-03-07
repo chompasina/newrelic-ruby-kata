@@ -1,0 +1,3 @@
+<% @sites.each do |site| -%>
+    <li><%= site.url %> <% if site.icon.present? %><i class="glyphicon glyphicon-ok"></i><% end %></li>
+<% end -%>
